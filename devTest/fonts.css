@@ -1,0 +1,33 @@
+/* Custom Font */
+@font-face {
+	font-family: Harmonia;
+	src: url(fonts/harmonia_sans_w01_bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Harmonia;
+	src: url(fonts/harmonia_sans_w06_black_italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Harmonia;
+	src: url(fonts/harmonia_sans_w01_regular.ttf);
+}
+
+@font-face {
+	font-family: HarmoniaMono;
+	src: url(fonts/harmonia_sans_mono_w01_bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: HarmoniaCondensed;
+	src: url(fonts/harmonia_sans_w06_condensed.ttf);
+}
+
+
+html {
+    font-size: 62.5%;
+}

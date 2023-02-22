@@ -1,0 +1,295 @@
+/* 
+1. GLOBAL STYLES
+
+2. HEADER
+
+3. ARCHIVES
+
+4. PARTICIPANTS
+
+5. SPONSORS
+
+6. FOOTER
+*/
+
+
+/* 1. GLOBAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0D8360;
+    color: #FFFFFF;
+    font-family: Harmonia;
+    margin: 0;
+}
+
+.main-wrapper {
+    margin-left: 2.5%;
+}
+
+h2 {
+    font-size: 6.8em;
+}
+
+h3 {
+    font-size: 3.4em;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+a {
+    color: #FFFFFF;
+}
+/* END GLOBAL STYLES */
+
+/* 2. HEADER */
+header, .main-nav ul, .logo-text, .archives, .participant-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side, .right-side {
+    padding-top: 1.5%;
+}
+
+.right-side {
+    background-color: #0A664B;
+    min-width: 50vw;
+}
+
+.logo-text {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-text {
+    font-size: 1.6em;
+}
+
+.logo-text p {
+    padding-left: 2%;
+    margin-top: 1%;
+}
+
+h1 {
+    font-size: 6em;
+    padding-right: 12%; 
+}
+
+.acknowledge {
+    padding-right: 15%;
+    margin-bottom: 35%;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 6em;
+    margin-bottom: 2%;
+}
+
+.main-nav ul {
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin-right: 5%;
+}
+
+.main-nav li {
+    margin-left: 5%;
+    font-size: 1.8em;
+}
+
+.current-page-nav {
+    font-weight: bold;
+}
+
+/* END HEADER */
+
+/* 3. ARCHIVES */
+.archives-img {
+    position: relative;
+    width: 32.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7.5%;
+}
+
+.archives-img img {
+    width: 100%;
+    filter: contrast(250%);
+}
+.archives-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(3, 100, 63, 0.833);
+}
+
+.archives-text {
+    width: 45vw;
+}
+
+.archives-text h2 {
+    padding-top: 20%;
+    padding-right: 30%;
+}
+
+.archives-text p {
+    font-size: 2.6em;
+    padding-right: 20%;
+}
+/* END ARCHIVES */
+
+/* 4. PARTICIPANTS */
+.participant-container {
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.participant-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 2.6em;
+    line-height: 1.75;
+}
+/* END PARTICIPANTS */
+
+/* 5. SPONSORS */
+.sponsors, .produced-by, .donations, .sponsors, .single-sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.produced-by, .donations, .sponsors-container {
+    width: 80%;
+}
+
+.sponsors {
+    background-color: #FFFFFF;
+    color:#0D8360;
+    padding-top: 0;
+}
+
+.produced-by img, .donor-container, .sponsors-container {
+    margin-top: 2%;
+}
+
+.donor-container, .sponsors-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.donor-container li:nth-child(2) {
+    margin: 0 10%;
+}
+
+.sponsors-container  {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #656565;
+    font-size: 1.8em;
+    margin-bottom: 5%;
+}
+
+.single-sponsor {
+    width: 20%;
+    padding: 0;
+}
+/* END SPONSORS */
+
+/* 6. FOOTER */
+footer {
+    background-color: #0D8360;
+}
+
+.wrapper {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.back-to-top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4%;
+}
+
+.btt-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.btt-nav i {
+    font-size: 6em;
+    transform: rotate(180deg);
+} 
+
+.btt-nav p {
+    font-size: 2.4em;
+}
+
+.h-line {
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 2% 0 1% 0;
+    font-size: 1.4em;
+
+}
+
+.aids-van {
+    display: flex;
+    flex-direction: column;
+}
+
+.aids-van-logo {
+    position: relative;
+    width: 55%;
+    margin-left: -15px;
+}
+
+.aids-van img {
+    display: block;
+    width: 100%;
+    filter: grayscale(1) contrast(250%);
+}
+
+.aids-van-logo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0.5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(3, 100, 63, 0.833);
+}
+
